@@ -17,6 +17,11 @@ img {
   width: 100%;
 }
 
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 /*=========== 
 ヘッダー
  ===========*/
@@ -38,7 +43,7 @@ header nav ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 68px;
-  font-family: "Bradley Hand";
+  font-family: "Bradley Hand", "Noto Serif JP", serif;
 }
 
 header nav ul li {
@@ -54,10 +59,11 @@ header nav ul li a {
   color: #99754e;
 }
 
-header h1 {
+header h1 img {
   width: 580px;
   height: 200px;
-  margin-top: 170px;
+  position: absolute;
+  top: 170px;
 }
 
 header .logo {
@@ -71,11 +77,6 @@ header .logo {
 /*=========== 
 about
  ===========*/
-#about {
-  width: 1100px;
-  margin: 0 auto 150px;
-}
-
 #about .about_grop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,20 +84,28 @@ about
 }
 
 #about .about_grop .about-img {
-  width: 500px;
+  width: 550px;
   height: 880px;
 }
 
 #about .about_grop .about_text {
+  margin-left: 75px;
   width: 482px;
+  margin-top: 285px;
 }
 
 #about .about_grop .about_text .ttl {
   font-size: 3.6rem;
+  margin-bottom: 22px;
 }
 
 #about .about_grop .about_text .txt {
   font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+#about .about_grop .about_text .txt p:nth-child(1) {
+  margin-bottom: 22px;
 }
 
 /*=========== 
@@ -107,31 +116,41 @@ Private space
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-top: 240px;
+}
+
+.ps .ps_text {
+  padding-top: 110px;
 }
 
 .ps .ps_text .ttl {
   font-size: 3.6rem;
+  margin-bottom: 22px;
 }
 
 .ps .ps_text .txt {
   font-size: 1.8rem;
+  line-height: 1.5;
 }
 
-.ps .ps_text .ps-img02 {
+.ps .ps-img02 {
   width: 190px;
   height: 330px;
   position: absolute;
-  left: 360px;
+  left: 200px;
   top: 360px;
 }
 
-.ps .ps_text .ps-img03 {
+.ps .ps-img03 {
   width: 210px;
   height: 350px;
+  position: absolute;
+  top: 468px;
 }
 
 .ps .ps-img01 {
   width: 415px;
   height: 830px;
+  margin-left: 210px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,17 +1,26 @@
 html {
     font-size: 62.5%;
 }
+
 body {
     font-family: "Noto Serif JP", serif;
     color: #99754e;
 }
+
 .wrapper {
     width: auto;
     margin: 0 auto;
 }
+
 img {
     width: 100%;
 }
+
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+
 
 /*=========== 
 ヘッダー
@@ -31,14 +40,16 @@ header {
             display: flex;
             justify-content: flex-end;
             padding-right: 68px;
-            font-family: "Bradley Hand";
+            font-family: "Bradley Hand", "Noto Serif JP", serif;
 
             li {
                 font-size: 2.4rem;
                 padding: 40px 0 0 66px;
+
                 &:nth-child(1) {
                     padding-left: 0px;
                 }
+
                 a {
                     color: #99754e;
                 }
@@ -46,11 +57,13 @@ header {
         }
     }
 
-    h1 {
+    h1 img {
         width: 580px;
         height: 200px;
-        margin-top: 170px;
+        position: absolute;
+        top: 170px;
     }
+
     .logo {
         width: 300px;
         height: 130px;
@@ -58,60 +71,86 @@ header {
         left: 75vw;
         top: 16.8vw;
     }
+
 }
+
 /*=========== 
 about
  ===========*/
 #about {
 
-    width: 1100px;
-    margin: 0 auto 150px;
     .about_grop {
         display: flex;
+
         .about-img {
-            width: 500px;
+            width: 550px;
             height: 880px;
         }
 
         .about_text {
+            margin-left: 75px;
             width: 482px;
+            margin-top: 285px;
+
             .ttl {
                 font-size: 3.6rem;
+                margin-bottom: 22px;
             }
+
             .txt {
                 font-size: 1.8rem;
+                line-height: 1.5;
+
+                p:nth-child(1) {
+                    margin-bottom: 22px;
+                }
             }
+
         }
     }
 }
+
 /*=========== 
 Private space
  ===========*/
- .ps{
-     display: flex;
-     position: relative;
-     .ps_text{
+.ps {
+    display: flex;
+    position: relative;
+    margin-top: 240px;
+
+    .ps_text {
+        padding-top: 110px;
+
         .ttl {
             font-size: 3.6rem;
+            margin-bottom: 22px;
         }
+
         .txt {
             font-size: 1.8rem;
+            line-height: 1.5;
         }
-        .ps-img02{
-            width: 190px;
-            height:330px;
-            position: absolute;
-            left: 360px;
-            top: 360px;
-            
-        }
-        .ps-img03{
-            width: 210px;
-            height:350px;
-        }
-     }
-     .ps-img01{
-         width: 415px;
-         height: 830px;
-     }
- }
+
+    }
+
+    .ps-img02 {
+        width: 190px;
+        height: 330px;
+        position: absolute;
+        left: 200px;
+        top: 360px;
+    }
+
+    .ps-img03 {
+        width: 210px;
+        height: 350px;
+        position: absolute;
+        top: 468px;
+    }
+
+    .ps-img01 {
+        width: 415px;
+        height: 830px;
+        margin-left: 210px;
+    }
+}
