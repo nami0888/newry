@@ -21,7 +21,6 @@ img {
     margin: 0 auto;
 }
 
-
 /*=========== 
 ヘッダー
  ===========*/
@@ -57,11 +56,10 @@ header {
         }
     }
 
-    h1 img {
+    h1 {
         width: 580px;
         height: 200px;
-        position: absolute;
-        top: 170px;
+        margin-top: 170px;
     }
 
     .logo {
@@ -71,41 +69,38 @@ header {
         left: 75vw;
         top: 16.8vw;
     }
-
 }
 
 /*=========== 
 about
  ===========*/
-#about {
 
+#about {
     .about_grop {
         display: flex;
 
         .about-img {
-            width: 550px;
+            width: 500px;
             height: 880px;
         }
 
         .about_text {
-            margin-left: 75px;
             width: 482px;
-            margin-top: 285px;
+            margin-left: 135px;
 
             .ttl {
                 font-size: 3.6rem;
-                margin-bottom: 22px;
+                line-height: 3;
             }
 
             .txt {
                 font-size: 1.8rem;
-                line-height: 1.5;
+                line-height: 1.8;
 
                 p:nth-child(1) {
-                    margin-bottom: 22px;
+                    margin-bottom: 28px;
                 }
             }
-
         }
     }
 }
@@ -113,44 +108,249 @@ about
 /*=========== 
 Private space
  ===========*/
+
 .ps {
     display: flex;
     position: relative;
     margin-top: 240px;
 
     .ps_text {
-        padding-top: 110px;
+        width: 500px;
 
         .ttl {
             font-size: 3.6rem;
-            margin-bottom: 22px;
+            line-height: 3;
         }
 
         .txt {
             font-size: 1.8rem;
-            line-height: 1.5;
+            width: 490px;
+            line-height: 1.8;
+            margin: 80px 0 150px 0;
         }
 
-    }
-
-    .ps-img02 {
-        width: 190px;
-        height: 330px;
-        position: absolute;
-        left: 200px;
-        top: 360px;
-    }
-
-    .ps-img03 {
-        width: 210px;
-        height: 350px;
-        position: absolute;
-        top: 468px;
+        .ps-img02 {
+            width: 190px;
+            height: 330px;
+            position: absolute;
+            left: 185px;
+            top: 360px;
+        }
     }
 
     .ps-img01 {
         width: 415px;
         height: 830px;
-        margin-left: 210px;
+        margin-left: 185px;
+    }
+}
+
+/*=========== 
+about me
+===========*/
+
+#aboutme {
+    background-image: url("/img/aboutme__back_parts.png");
+    height: 830px;
+    margin-top: 200px;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+    h2 {
+        padding-bottom: 100px;
+    }
+
+    .aboutme-grop {
+        display: flex;
+        width: 693px;
+
+        .aboutme-text_grop {
+            margin-left: 45px;
+
+            .nagami_img {
+                width: 290px;
+                height: 267px;
+                margin-left: 45px;
+            }
+
+            .name {
+                font-size: 2.8rem;
+                margin-bottom: 34px;
+            }
+
+            .text {
+                font-size: 1.8rem;
+                line-height: 1.8;
+                width: 369px;
+            }
+        }
+    }
+}
+
+/*=========== 
+gallery
+===========*/
+
+#gallery {
+    h2 {
+        width: 378px;
+        margin: 0 auto;
+        padding-bottom: 110px;
+    }
+
+    .galley-grop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 85px 75px;
+    }
+}
+
+/*=========== 
+price
+===========*/
+
+#price {
+    margin-top: 200px;
+
+    h2 {
+        width: 378px;
+        margin: 0 auto;
+        padding-bottom: 110px;
+    }
+
+    .price_service {
+        width: 960px;
+        height: 75px;
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .price-grop {
+        display: flex;
+        font-size: 14px;
+        margin: 0 auto;
+        width: 960px;
+        justify-content: space-around;
+       
+        .price-item {
+
+            display: flex;
+       
+   
+          margin-right: 50px;
+
+            ul {
+                display: flex;
+                flex-flow: column;
+                padding-left: 50px;
+          
+                
+               
+            }
+
+        }
+    }
+
+}
+
+
+/*=========== 
+access
+===========*/
+
+#access {
+    margin-top: 170px;
+
+    h2 {
+        width: 378px;
+        margin: 0 auto;
+        padding-bottom: 110px;
+    }
+
+    .access-grop {
+        display: flex;
+        margin: 0 auto;
+        width: 800px;
+        padding-left: 55px;
+        font-size: 1.6rem;
+
+        .map {
+            width: 340px;
+            height: 240px;
+        }
+
+        .text-grop {
+            margin-left: 55px;
+            width: 410px;
+            font-size: 1.6rem;
+
+            .access-text {
+                line-height: 2.5rem;
+            }
+
+            .tel {
+                margin: 12px 0 35px 0;
+            }
+
+            .btn_sp {
+                width: 155px;
+                margin-bottom: 12px;
+            }
+
+            .register {
+                position: relative;
+                display: inline-block;
+                padding-left: 12px;
+
+                text-decoration: none;
+
+                a {
+                    position: relative;
+                }
+
+
+                &:before {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 6px 0 6px 8px;
+                    border-color: transparent transparent transparent #d2857e;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin-top: -6px;
+
+                }
+            }
+        }
+    }
+}
+
+/*=========== 
+footer
+===========*/
+
+footer {
+    background-color: #fff5f2;
+    height: 45px;
+    margin-top: 200px;
+
+    .cooyright {
+        width: 75px;
+        margin: 0 auto;
+        font-size: 18px;
+        padding-top: 10px;
     }
 }
